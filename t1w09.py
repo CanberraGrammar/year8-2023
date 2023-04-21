@@ -8,7 +8,7 @@ LEDStatic.on()
 LED = Pin(0, Pin.OUT)
 while True:
     LED.on()
-    sleep_ms(1)
+    sleep_ms(1) 
     LED.off()
     sleep_ms(10)
 """

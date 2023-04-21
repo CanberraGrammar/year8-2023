@@ -11,7 +11,7 @@ duty = 0
 change = 1
 while True:
     if duty >= 65535:
-        change = -1
+        change = -1 
     if duty <= 0:
         change = 1
     duty = duty + change
