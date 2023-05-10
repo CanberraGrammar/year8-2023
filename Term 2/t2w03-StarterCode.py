@@ -16,7 +16,7 @@ def getFrequency(note):
     else:
         keyNumber = keyNumber + (octave - 1) * 12 + 1
 
-    return 440 * (2 ** ((keyNumber - 49) / 12))
+    return int(440 * (2 ** ((keyNumber - 49) / 12)))
 
 Buzz = PWM(Pin(11))
 
