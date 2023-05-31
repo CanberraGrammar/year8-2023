@@ -10,7 +10,7 @@
 
 ### Rolling Text
 
-![](Oled-Pictures/13-Text.gif)
+![](Oled-Pictures/13-Ticker.gif)
 
 ### Skew Triangle
 
