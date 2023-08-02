@@ -14,13 +14,15 @@ floorY = 56
 dinoX = 24
 dinoY = floorY
 dinoVY = 0
-dinoAY = 0.3
+dinoAY = 0.4
 dinoWidth = 13
 dinoHeight = 22
 
 objects = [(4,48,10),(80,23,5)]
 
-while True:
+gameRunning = True
+
+while gameRunning:
     startTime = time.ticks_ms()
     oled.fill(0)
 
@@ -46,8 +48,17 @@ while True:
     for i in range(len(objects)):
         obstX, obstY, obstSize = objects[i]
         obstX = obstX - 1
-        if obstX <= 0:
+        if obstX <= 0 - obstSize:
             obstX = 128
+            obstSize = randint(5,15)
+            obstY = randint(0,floorY - obstSize)
+        
+        if (obstX < dinoX + dinoWidth
+                and obstX + obstSize > dinoX
+                and obstY + obstSize > dinoY - dinoHeight
+                and obstY < dinoY):
+            gameRunning = False
+        
         objects[i] = (obstX, obstY, obstSize)
         oled.rect(obstX,obstY,obstSize,obstSize,1)
     
