@@ -51,7 +51,12 @@ def checkForMovement():
             pass
 
 
-
+keyBoard = [
+    ["1234567890"],
+    ["ABCDEFGHIJ"],
+    ["KLMNOPQRST"],
+    ["UVWXYZ .!?"]
+    ]
 
 
 
