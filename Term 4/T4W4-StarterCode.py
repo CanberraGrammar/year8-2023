@@ -10,7 +10,7 @@ joyX = ADC(Pin(26))
 joyY = ADC(Pin(27))
 joyBtn = Pin(16,Pin.IN,Pin.PULL_UP)
 
-keyBoard = [
+keyboard = [
     ["1234567890"],
     ["ABCDEFGHIJ"],
     ["KLMNOPQRST"],
