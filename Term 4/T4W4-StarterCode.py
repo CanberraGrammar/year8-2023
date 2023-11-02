@@ -48,13 +48,18 @@ def checkForMovement():
     elif (readyForNextMove):
         if move == "U":
             pass
+            readyForNextMove = False
         elif move == "R":
             pass
+            readyForNextMove = False
         elif move == "L":
             pass
+            readyForNextMove = False
         elif move == "D":
             pass
+            readyForNextMove = False
         elif mode == "P":
             pass
+            readyForNextMove = False
 
 
