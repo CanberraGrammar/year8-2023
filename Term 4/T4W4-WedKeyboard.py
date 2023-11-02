@@ -62,7 +62,7 @@ def checkForMovement():
             selected = (selX, selY - 1)
             readyForNextMove = False
         elif move == "P":
-            pass`
+            pass
             readyForNextMove = False
 
 def drawKeyboard():
