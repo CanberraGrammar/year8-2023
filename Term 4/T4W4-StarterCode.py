@@ -10,6 +10,13 @@ joyX = ADC(Pin(26))
 joyY = ADC(Pin(27))
 joyBtn = Pin(16,Pin.IN,Pin.PULL_UP)
 
+keyBoard = [
+    ["1234567890"],
+    ["ABCDEFGHIJ"],
+    ["KLMNOPQRST"],
+    ["UVWXYZ .!?"]
+    ]
+
 def readMove():
     readingX = joyX.read_u16()/32768-1
     readingY = joyY.read_u16()/32768-1
@@ -49,19 +56,5 @@ def checkForMovement():
             pass
         elif mode == "P":
             pass
-
-
-keyBoard = [
-    ["1234567890"],
-    ["ABCDEFGHIJ"],
-    ["KLMNOPQRST"],
-    ["UVWXYZ .!?"]
-    ]
-
-
-
-
-
-
 
 
